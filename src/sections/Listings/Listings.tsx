@@ -2,10 +2,10 @@ import { useMutation, useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
 import React from "react";
 import {
-  DeleteListingData,
+  DeleteListing as DeleteListingData,
   DeleteListingVariables,
-  ListingsData,
-} from "./types";
+} from "./__generated__/DeleteListing";
+import { Listings as ListingsData } from "./__generated__/Listings";
 
 interface Props {
   title: string;
